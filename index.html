@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chaithanya | Portfolio</title>
+  <style>
+    :root {
+      --primary-color: #2c3e50;
+      --secondary-color: #ecf0f1;
+      --accent-color: #3498db;
+    }
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: var(--secondary-color);
+      color: var(--primary-color);
+      transition: background 0.3s, color 0.3s;
+    }
+    .dark-mode {
+      background-color: #1a1a1a;
+      color: #f0f0f0;
+    }
+    header {
+      background-color: var(--primary-color);
+      color: white;
+      padding: 1rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    header h1 {
+      margin: 0;
+    }
+    nav a {
+      margin: 0 10px;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .container {
+      padding: 2rem;
+    }
+    .section {
+      margin-bottom: 3rem;
+    }
+    .profile-pic {
+      width: 150px;
+      border-radius: 50%;
+    }
+    .projects div {
+      background: white;
+      padding: 1rem;
+      margin: 1rem 0;
+      border-left: 5px solid var(--accent-color);
+    }
+    .button {
+      background: var(--accent-color);
+      color: white;
+      border: none;
+      padding: 0.7rem 1.2rem;
+      cursor: pointer;
+      text-decoration: none;
+    }
+    .toggle-theme {
+      cursor: pointer;
+      color: var(--accent-color);
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Jonnagaddala Chaithanya</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+      <span class="toggle-theme" onclick="toggleTheme()">🌓</span>
+    </nav>
+  </header>
+
+  <div class="container">
+    <section id="about" class="section">
+      <h2>About Me</h2>
+      <img src="profile.jpg" alt="Profile Picture" class="profile-pic" />
+      <p>
+        I'm a BE Electronics and Communication Engineering graduate passionate about software and cloud technologies. I enjoy building user-friendly applications and am driven by curiosity and innovation.
+      </p>
+    </section>
+
+    <section id="projects" class="section">
+      <h2>Projects</h2>
+      <div>
+        <h3>Smart Home Energy Monitoring and Control System</h3>
+        <p>Web interface to monitor and control home energy using OpenWatt. Real-time energy tracking and appliance control for efficiency.</p>
+      </div>
+      <div>
+        <h3>Skin Care Ecommerce with Doctor Appointment Booking</h3>
+        <p>An ecommerce site for skincare products with integrated doctor consultations for personalized advice.</p>
+      </div>
+    </section>
+
+    <section id="skills" class="section">
+      <h2>Skills</h2>
+      <ul>
+        <li>MERN Stack (MongoDB, Express.js, React.js, Node.js)</li>
+        <li>Python, Basics of C</li>
+        <li>HTML, CSS, JavaScript</li>
+        <li>SQL, MongoDB</li>
+      </ul>
+    </section>
+
+    <section id="contact" class="section">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:Chaithanyac6300@gmail.com">Chaithanyac6300@gmail.com</a></p>
+      <p>Phone/Whatsapp: 6300935819</p>
+      <p>Location: Chittoor, Andhra Pradesh</p>
+      <a href="https://www.linkedin.com/in/j-chaithanya-rise" class="button" target="_blank">LinkedIn</a>
+      <a href="resume.pdf" class="button" view>View Resume</a>
+    </section>
+  </div>
+
+  <script>
+    function toggleTheme() {
+      document.body.classList.toggle('dark-mode');
+    }
+  </script>
+</body>
+</html>
